@@ -1,5 +1,14 @@
 ;;; go-template-mode.el --- Major mode for Go template language
 
+;; Copyright (C) 2012 John Doe <john.doe@gmail.com>
+
+;; Author John Doe <john.doe@gmail.com>
+;; Version: 0.1
+
+
+;; Copied from https://gist.github.com/anonymous/1654113
+
+
 ;;; Commentary:
 
 ;; 1) Copy this file somewhere in your Emacs `load-path'.  To see what
@@ -146,7 +155,7 @@ directly; use `go-template-mode-cs'."
 	    ;; Back up to the last known state.
 	    (let ((last-cs
 		   (and (> go-template-mode-mark-cs-end 1)
-			(get-text-property (1- go-template-mode-mark-cs-end) 
+			(get-text-property (1- go-template-mode-mark-cs-end)
 					   'go-template-mode-cs))))
 	      (if last-cs
 		  (car last-cs)
